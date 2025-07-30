@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: docker-build
     env:
-      MONGO_URI: 'mongodb+srv://ahmed:${{ secrets.MONGO_PASSWORD }}@github-actions-iti-2025.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
+      MONGO_URI: ' mongodb+srv://supercluster.d83jj.mongodb.net/superData'
       MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
       MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
     steps:
